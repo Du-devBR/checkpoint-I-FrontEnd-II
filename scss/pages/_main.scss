@@ -1,0 +1,72 @@
+
+.container {
+
+  display: flex;
+  width: 900px;
+  height: 550px;
+  overflow: hidden;
+  background-image: url(/img/bg-tela.svg);
+
+  .search {
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 100%;
+    padding: 64px 32px;
+    align-items: center;
+
+    h1 {
+
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+
+    }
+
+    input {
+
+      width: 100%;
+      background-color: transparent;
+      border-radius: 16px;
+      border: solid 0.5px #000;
+      padding: 17px 32px;
+      margin: 100px 0 64px 0;
+
+    }
+    ::placeholder {
+
+      font-size: 14px;
+      color: #000;
+
+    }
+
+    .gitHub_links {
+
+      margin-top: 64px;
+
+    }
+  }
+
+  .sub_container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 640px);
+    padding: 64px 16px;
+
+    p {
+
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+      letter-spacing: 2px;
+
+    }
+  }
+
+}

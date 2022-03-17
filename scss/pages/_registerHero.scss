@@ -1,0 +1,39 @@
+.form_register {
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  height: 100%;
+  padding: 64px 132px;
+  align-items: center;
+
+  h2 {
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+
+  }
+
+  label {
+
+    font-size: 18px;
+    color: #000;
+
+  }
+
+  input {
+
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #000;
+    margin: 28px 0;
+    padding: 0 4px 4px 4px;
+
+  }
+
+}

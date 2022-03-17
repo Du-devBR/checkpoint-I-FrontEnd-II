@@ -1,1 +1,25 @@
-/* No CSS */
+.link_gallery, .btn_submit {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
+  background-image: linear-gradient(left, #D72121, #0073ee5d);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn_register {
+  background-color: transparent;
+  border-radius: 16px;
+  border: solid 2px #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px;
+}
