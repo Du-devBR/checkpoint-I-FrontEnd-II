@@ -89,6 +89,28 @@
   letter-spacing: 2px;
 }
 
+.gallery {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.gallery h2 {
+  background-color: #202020;
+  padding: 32px;
+  color: #fff;
+}
+
+.gallery .containerGallery {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  background-color: #151515;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 32px;
+}
+
 .form_register {
   background-color: #fff;
   display: -webkit-box;
@@ -126,6 +148,34 @@
   border-bottom: solid 1px #000;
   margin: 28px 0;
   padding: 0 4px 4px 4px;
+}
+
+.cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background-color: #202020;
+}
+
+.cards img {
+  width: 100%;
+  height: 235px;
+}
+
+.cards h3 {
+  color: #fff;
+  margin: 16px;
+}
+
+.cards p {
+  margin: 0 16px 16px 16px;
+  color: #fff;
 }
 
 .link_gallery, .btn_submit {
@@ -172,16 +222,6 @@ html, body, h1, h2, h3, h4, ul, li, a, button, p {
 
 body {
   width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
   background-image: linear-gradient(left, #D72121, #0073ee5d);
 }

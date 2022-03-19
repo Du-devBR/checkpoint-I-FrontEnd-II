@@ -11,33 +11,36 @@ getInputBtn.addEventListener('click', function(event){
 
     let heroObject = {
 
-    nome :getInputName.value,
+    imagem: getInputUrl.value,
+    nome: getInputName.value,
     descricao: getInputDescription.value,
-    imagem: getInputUrl.value
 
   }
 
-  arrayHeroes.push(heroObject)
+  arrayHeroes.unshift(heroObject) //utilizado UNSHIFT para adionar ao começo do array
   console.log(arrayHeroes)
 
+
+  mainContent.innerHTML = '' // metodo para quando adionar os campos no html, não respostar o array anterior
   for(let post of arrayHeroes) {
 
     mainContent.innerHTML += `
 
-    <div class="item">
+    <div class="cards">
         <img src="${post.imagem}">
-        <h2>${post.nome}</h2>
+        <h3>${post.nome}</h3>
         <p>${post.descricao}</p>
     </div>
     `
   }
+
+
 
 })
 
 
 
 
-console.log(mainContent)
 // console.log(getInputDescription)
 // console.log(getInputUrl)
 // console.log(getInputBtn)
