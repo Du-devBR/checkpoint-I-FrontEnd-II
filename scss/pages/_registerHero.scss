@@ -1,39 +1,69 @@
-.form_register {
+.header {
 
-  background-color: #fff;
-  display: flex;
+  display: block;
+  position: relative;
   flex-direction: column;
-  width: 640px;
-  height: 100%;
-  padding: 64px 132px;
-  align-items: center;
+  background-image: url(/img/bg-tela.svg);
+  background-color: beige;
+  background-size: cover;
+  width: 100vw;
+  height: 250px;
 
-  h2 {
+  h1 {
 
-    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
     font-weight: bold;
-    color: #000;
     text-transform: uppercase;
-    margin-bottom: 64px;
-
+    padding-top: 32px;
   }
 
-  label {
+  .form_regiterHero {
 
-    font-size: 18px;
-    color: #000;
-
-  }
-
-  input {
-
+    display: flex;
     width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px #000;
-    margin: 28px 0;
-    padding: 0 4px 4px 4px;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 46px 32px;
+    gap: 32px;
 
+
+    .input_name, .input_description, .input_url {
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      label {
+
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 16px;
+
+      }
+
+      input {
+
+        width: 100%;
+        background-color: #7e757510;
+        border:none;
+        border-bottom: solid 1px #fff;
+        color: #fff;
+        font-size: 14px;
+        padding: 4px 10px;
+
+      }
+
+      .inputInvalid {
+
+        border-bottom: solid 1px rgb(236, 25, 25);
+
+      }
+    }
   }
 
 }

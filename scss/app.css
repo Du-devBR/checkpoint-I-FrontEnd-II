@@ -90,14 +90,16 @@
 }
 
 .gallery {
-  width: 100%;
-  margin: 100px 0;
+  margin-top: 80px;
+  background-color: #202020;
 }
 
 .gallery h2 {
-  background-color: #202020;
-  padding: 32px;
   color: #fff;
+  padding: 32px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .gallery .containerGallery {
@@ -111,8 +113,31 @@
   padding: 32px;
 }
 
-.form_register {
-  background-color: #fff;
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: #202020;
+}
+
+.modal .nameHero {
+  width: 100%;
+  background-color: #151515;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.modal .nameHero h3 {
+  color: white;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.modal .container_modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,34 +145,96 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 640px;
+  width: 840px;
   height: 100%;
-  padding: 64px 132px;
+  overflow: hidden;
+  margin: 80px auto 32px auto;
+}
+
+.modal .container_modal img {
+  width: 100%;
+}
+
+.modal .container_modal p {
+  font-size: 18px;
+  color: #fff;
+  margin: 64px 0 32px 0;
+}
+
+.open {
+  display: block;
+}
+
+.header {
+  display: block;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/img/bg-tela.svg);
+  background-color: beige;
+  background-size: cover;
+  width: 100vw;
+  height: 250px;
+}
+
+.header h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 32px;
+}
+
+.header .form_regiterHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #202020;
+  padding: 46px 32px;
+  gap: 32px;
+}
+
+.header .form_regiterHero .input_name, .header .form_regiterHero .input_description, .header .form_regiterHero .input_url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.form_register h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 64px;
-}
-
-.form_register label {
+.header .form_regiterHero .input_name label, .header .form_regiterHero .input_description label, .header .form_regiterHero .input_url label {
+  color: #fff;
   font-size: 18px;
-  color: #000;
+  margin-bottom: 16px;
 }
 
-.form_register input {
+.header .form_regiterHero .input_name input, .header .form_regiterHero .input_description input, .header .form_regiterHero .input_url input {
   width: 100%;
-  background-color: transparent;
+  background-color: #7e757510;
   border: none;
-  border-bottom: solid 1px #000;
-  margin: 28px 0;
-  padding: 0 4px 4px 4px;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.header .form_regiterHero .input_name .inputInvalid, .header .form_regiterHero .input_description .inputInvalid, .header .form_regiterHero .input_url .inputInvalid {
+  border-bottom: solid 1px #ec1919;
 }
 
 .cards {
@@ -161,25 +248,43 @@
           flex-direction: column;
   overflow: hidden;
   background-color: #202020;
+  border-radius: 8px;
 }
 
 .cards img {
   width: 100%;
   height: 235px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.cards h3 {
-  color: #fff;
-  margin: 16px;
+.cards .name_description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px 16px;
 }
 
-.cards p {
-  margin: 0 16px 16px 16px;
+.cards .name_description h3 {
   color: #fff;
+  text-transform: capitalize;
+}
+
+.cards .name_description p {
+  overflow-y: hidden;
+  height: 40px;
+  color: #fff;
+  margin: 16px 0;
 }
 
 .link_gallery, .btn_submit {
   width: 100%;
+  text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
   background-image: linear-gradient(left, #D72121, #0073ee5d);
   border: none;
@@ -189,6 +294,7 @@
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_register {
@@ -202,6 +308,34 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 14px;
+}
+
+.viewMore {
+  background-color: transparent;
+  border-radius: 16px;
+  border: solid 2px #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.close_modal {
+  background-color: #fff;
+  border-radius: 16px;
+  border: none;
+  color: #202020;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px;
+  cursor: pointer;
 }
 
 /* Font family ROBOTO */
@@ -221,7 +355,22 @@ html, body, h1, h2, h3, h4, ul, li, a, button, p {
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
+  background-image: linear-gradient(left, #D72121, #0073ee5d);
+}
+
+.body_main {
   width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
   background-image: linear-gradient(left, #D72121, #0073ee5d);
 }

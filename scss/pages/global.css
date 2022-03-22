@@ -89,14 +89,16 @@
 }
 
 .gallery {
-  width: 100%;
-  margin: 100px 0;
+  margin-top: 80px;
+  background-color: #202020;
 }
 
 .gallery h2 {
-  background-color: #202020;
-  padding: 32px;
   color: #fff;
+  padding: 32px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .gallery .containerGallery {
@@ -110,8 +112,31 @@
   padding: 32px;
 }
 
-.form_register {
-  background-color: #fff;
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: #202020;
+}
+
+.modal .nameHero {
+  width: 100%;
+  background-color: #151515;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.modal .nameHero h3 {
+  color: white;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.modal .container_modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,32 +144,94 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 640px;
+  width: 840px;
   height: 100%;
-  padding: 64px 132px;
+  overflow: hidden;
+  margin: 80px auto 32px auto;
+}
+
+.modal .container_modal img {
+  width: 100%;
+}
+
+.modal .container_modal p {
+  font-size: 18px;
+  color: #fff;
+  margin: 64px 0 32px 0;
+}
+
+.open {
+  display: block;
+}
+
+.header {
+  display: block;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/img/bg-tela.svg);
+  background-color: beige;
+  background-size: cover;
+  width: 100vw;
+  height: 250px;
+}
+
+.header h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 32px;
+}
+
+.header .form_regiterHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #202020;
+  padding: 46px 32px;
+  gap: 32px;
+}
+
+.header .form_regiterHero .input_name, .header .form_regiterHero .input_description, .header .form_regiterHero .input_url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.form_register h2 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 64px;
-}
-
-.form_register label {
+.header .form_regiterHero .input_name label, .header .form_regiterHero .input_description label, .header .form_regiterHero .input_url label {
+  color: #fff;
   font-size: 18px;
-  color: #000;
+  margin-bottom: 16px;
 }
 
-.form_register input {
+.header .form_regiterHero .input_name input, .header .form_regiterHero .input_description input, .header .form_regiterHero .input_url input {
   width: 100%;
-  background-color: transparent;
+  background-color: #7e757510;
   border: none;
-  border-bottom: solid 1px #000;
-  margin: 28px 0;
-  padding: 0 4px 4px 4px;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.header .form_regiterHero .input_name .inputInvalid, .header .form_regiterHero .input_description .inputInvalid, .header .form_regiterHero .input_url .inputInvalid {
+  border-bottom: solid 1px #ec1919;
 }

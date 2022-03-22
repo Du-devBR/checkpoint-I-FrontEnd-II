@@ -8,35 +8,48 @@
   <link rel="stylesheet" href="./scss/app.css">
 </head>
 <body>
-
-  <!-- <section class="formulario"> -->
-    <div class="container">
-      <div class="sub_container">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-        <a href="./index.html" class="btn_register">Voltar</a>
-      </div>
-      <form class="form_register">
-        <h2>Cadastrar Herois</h2>
+  <header class="header">
+    <h1>Cadastrar Herois</h1>
+    <form class="form_regiterHero">
+      <div class="input_name">
         <label for="">Nome</label>
-        <input type="text" id="inputName">
+        <input type="text" id="inputName" placeholder="Digite um nome de Heroi">
+      </div>
+      <div class="input_description">
         <label for="">Descrição</label>
-        <input type="text" id="inputDescription">
-        <label for="">Url-imagem</label>
-        <input type="url" id="inputUrl">
-        <button class="btn_submit" id="buttonSubmit">Cadastrar Heroi</button>
-      </form>
-    </div>
-  <!-- </section> -->
-
-  <section class="gallery">
-    <h2>Lista de Herois</h2>
+        <input type="text" id="inputDescription" placeholder="Descrieva seu Herói">
+      </div>
+      <div class="input_url">
+        <label for="">Url da imagem</label>
+        <input type="url" id="inputUrl" placeholder="https://copie e cole uma url de imagem">
+      </div>
+      <button class="btn_submit" id="buttonSubmit">Cadastrar Heróis</button>
+    </form>
+  </header>
+ <section class="gallery" id="galeria">
+    <h2>Lista de Herois cadastrados</h2>
     <div class="containerGallery" id="addContent">
       <!-- <div class="cards">
         <img src="./img/bg-tela.svg" alt="">
+      <div class="name_description">
         <h3>Nome</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia animi, quibusdam, odit porro deleniti laudantium aliquam placeat quam adipisci officiis culpa temporibus sint expedita enim quia odio laborum perspiciatis consequuntur itaque non ipsam velit sequi totam beatae. Minus iusto adipisci, nam minima in ullam? Error est illo iusto dicta, dolores dolor facilis quo, perspiciatis magni sapiente placeat aut? Numquam officiis architecto deserunt expedita repellendus, cumque debitis natus veritatis laborum ut harum esse modi ipsam accusantium? Dolorem molestiae officia rerum fugiat, minima culpa unde ipsam, exercitationem alias autem odio ex, fuga ipsum! Odit omnis et ut debitis voluptatem tempore nulla quo.</p>
+        <button class="viewMore">Ver mais</button>
+      </div>
       </div> -->
     </div>
+  </section>
+  <!-- <button class="viewMore" onclick="abrirModal()">Ver mais</button> -->
+
+  <section class="modal" id="modalOn">
+    <!-- <header class="nameHero">
+      <h3>teste</h3>
+    </header>
+    <div class="container_modal">
+        <img src="./img/bg-tela.svg" alt="">
+        <p>Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quas fuga eos minima veritatis aspernatur placeat. Inventore quis accusantium recusandae rem laboriosam corporis aliquam ad iure amet nobis! Laboriosam, magnam incidunt dolore quia optio illum doloribus harum impedit ex doloremque voluptas hic ipsum quo fugit iusto. Saepe illo voluptatum omnis iusto ipsa vero eos, laudantium beatae sint quas at excepturi magnam ipsam deserunt labore blanditiis, perferendis reprehenderit deleniti temporibus error! Error distinctio ab nisi earum suscipit unde, dolore impedit quas! amet consectetur adipisicing elit. Cum, dignissimos.</p>
+        <button class="close_modal" onclick="fecharModal()">Fechar</button>
+    </div> -->
   </section>
   <script src="./script.js"></script>
 </body>
