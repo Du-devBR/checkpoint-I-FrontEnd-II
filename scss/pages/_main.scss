@@ -1,11 +1,10 @@
-
 .container {
 
   display: flex;
   width: 900px;
   height: 550px;
   overflow: hidden;
-  background-image: url(/img/bg.jpg);
+  background: url(//img/bg.jpg);
 
   .search {
 
