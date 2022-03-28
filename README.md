@@ -32,3 +32,5 @@
 
 ## COMO ACESSAR A PAGINA
 ##LINK DEPLOY
+
+https://du-devbr.github.io/checkpoint-I-FrontEnd-II/
