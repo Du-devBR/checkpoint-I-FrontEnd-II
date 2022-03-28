@@ -1,10 +1,9 @@
 
-
+<img src="./img/gif.gif" alt="">
 # CHECKPOINT I - FRONT END II
 ## Esta atividade tem como objetivo servir como primeiro instrumento avaliativo da disciplina.
 ### Objetivo criar um formulario que receba três campos inputs, sendo NOME, DESCRIÇÃO E URL(imagem) e retornar os valores em um Array de objetos. Os objetos coletados devem ser adionado a um card e incremetar uma galeria com os cards.
 
-### .
 ### .
 ### .
 
@@ -13,13 +12,11 @@
 
 ### .
 ### .
-### .
 
 ## DESIGNER E CODIGO DESENVOLVIDO POR:
 ### Eduardo Ananias  <a href="https://github.com/Du-devBR"><img align = "center" alt = "" height = "30" width = "40" src="./img/icon_github.svg"></a>
 ### Salomão Santos  <a href="https://github.com/Salomao-will"><img align = "center" alt = "" height = "30" width = "40" src="./img/icon_github.svg"></a>
 
-### .
 ### .
 ### .
 
@@ -32,7 +29,6 @@
 
 ### .
 ### .
-### .
 
-## COMO ACESSAR O LINK
+## COMO ACESSAR A PAGINA
 ##LINK DEPLOY

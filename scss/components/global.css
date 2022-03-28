@@ -43,7 +43,7 @@
   margin: 16px 0;
 }
 
-.link_gallery, .btn_submit {
+.link_gallery {
   width: 100%;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
@@ -56,6 +56,25 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.btn_submit {
+  width: 100%;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
+  background-image: linear-gradient(left, #D72121, #0073ee5d);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .btn_register {

@@ -35,3 +35,75 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
   background-image: linear-gradient(left, #D72121, #0073ee5d);
 }
+
+@media (max-width: 778px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+  .container .search {
+    background-color: rgba(255, 255, 255, 0.856);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .container .sub_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, right top, from(#D72121), to(#0073ee5d));
+    background-image: linear-gradient(left, #D72121, #0073ee5d);
+    gap: 16px;
+    width: 100%;
+    padding: 16px 16px;
+  }
+}
+
+@media (max-width: 778px) {
+  .header .form_regiterHero {
+    padding: 46px 16px;
+    gap: 16px;
+  }
+  .header .form_regiterHero .input_name label, .header .form_regiterHero .input_description label, .header .form_regiterHero .input_url label {
+    font-size: 16px;
+  }
+  .header .form_regiterHero .input_name input, .header .form_regiterHero .input_description input, .header .form_regiterHero .input_url input {
+    font-size: 12px;
+  }
+  .gallery .containerGallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .modal .container_modal {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+    height: 450px;
+  }
+  .header .form_regiterHero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 46px 16px;
+  }
+  .gallery .containerGallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
