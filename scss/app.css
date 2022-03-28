@@ -6,7 +6,7 @@
   width: 900px;
   height: 550px;
   overflow: hidden;
-  background: url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
 }
 
 .container .search {
@@ -206,7 +206,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(/img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-color: beige;
   background-size: cover;
   width: 100vw;
